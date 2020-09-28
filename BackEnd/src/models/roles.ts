@@ -9,9 +9,8 @@ export default class Rol extends Base implements RolRepository {
 
 	public async getAll(): Promise<{ count: number; rows: RolEntity[] }> {
 		const rows = await this.knex
-			.select("permissions.id_rol", "permissions.id_component")
+			.select("id_rol", "name", "description")
 			.from("roles")
-			.join("permissions", "roles.id_rol", "permissions.id_rol")
 			.where({ status: 1 });
 
 		const count = rows.length;

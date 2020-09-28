@@ -1,6 +1,7 @@
 export default interface Rol {
+	id_rol: number;
 	name: string;
-	permissions: Array<Permission>;
+	description: string;
 }
 
 interface Permission {
