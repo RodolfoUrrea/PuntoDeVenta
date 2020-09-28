@@ -31,6 +31,6 @@ export default {
 	 */
 	token: {
 		secretKey: "NgYHx8#mSnk-BAN",
-		expirationTime: "1000h",
+		expirationTime: "100000h",
 	},
 };
