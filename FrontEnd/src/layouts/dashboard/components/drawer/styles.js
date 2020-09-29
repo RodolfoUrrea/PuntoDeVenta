@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
 		width: drawerWidth,
 	},
 	logoContainer: {
-		background: colors.blue,
+		background: colors.main,
 		display: "flex",
 		alignItems: "center",
 		justifyContent: "center",

@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
 			easing: theme.transitions.easing.sharp,
 			duration: theme.transitions.duration.leavingScreen,
 		}),
-		background: colors.blue,
+		background: colors.main,
 	},
 	appBarShift: {
 		width: `calc(100% - ${drawerWidth}px)`,
@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
 		width: "100%",
 		height: "270px",
 		position: "fixed",
-		background: colors.darkBlue,
+		background: colors.secondary,
 	},
 	secundaryBackgroundBar: {
 		width: "100%",
