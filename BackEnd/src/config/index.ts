@@ -15,7 +15,7 @@ export default {
 		host: "localhost",
 		user: "root",
 		password: "A6R7u5c6",
-		database: "punto_de_venta",
+		database: "encuestas_digitales",
 		port: 3306,
 	},
 

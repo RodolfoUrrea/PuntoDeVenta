@@ -1,7 +1,7 @@
 {
-	"name": "puntodeventa",
+	"name": "encuestasdigitales",
 	"version": "1.0.0",
-	"description": "Sistema punto de venta",
+	"description": "Sistema encuestas digitales",
 	"main": "src/index.ts",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",

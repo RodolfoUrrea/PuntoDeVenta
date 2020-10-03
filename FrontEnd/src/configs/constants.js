@@ -1,3 +1,3 @@
-const TITLE = "Punto De Venta";
+const TITLE = "Encuestas Digitales";
 
 export { TITLE };
