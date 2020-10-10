@@ -51,6 +51,55 @@
 			]
 		},
 		{
+			"id": 22,
+			"key": "Restaurante",
+			"icon": "Restaurant",
+			"children": [
+				{
+					"id": 23,
+					"key": "Mesas",
+					"icon": "TableChart"
+				},
+				{
+					"id": 24,
+					"key": "Áreas",
+					"icon": "ViewQuilt"
+				},
+				{
+					"id": 25,
+					"key": "Meseros",
+					"icon": "MenuBook"
+				}
+			]
+		},
+		{
+			"id": 17,
+			"key": "Corporativo",
+			"icon": "Business",
+			"children": [
+				{
+					"id": 18,
+					"key": "Empresas",
+					"icon": "AccountBalance"
+				},
+				{
+					"id": 19,
+					"key": "Sucursales",
+					"icon": "ViewCompact"
+				},
+				{
+					"id": 20,
+					"key": "Departamentos",
+					"icon": "Apps"
+				},
+				{
+					"id": 21,
+					"key": "Puestos",
+					"icon": "Work"
+				}
+			]
+		},
+		{
 			"id": 10,
 			"key": "Empleados",
 			"icon": "CardTravel",
@@ -103,55 +152,6 @@
 					"id": 28,
 					"key": "Agregar",
 					"icon": "Queue"
-				}
-			]
-		},
-		{
-			"id": 17,
-			"key": "Corporativo",
-			"icon": "Business",
-			"children": [
-				{
-					"id": 18,
-					"key": "Empresas",
-					"icon": "AccountBalance"
-				},
-				{
-					"id": 19,
-					"key": "Sucursales",
-					"icon": "ViewCompact"
-				},
-				{
-					"id": 20,
-					"key": "Departamentos",
-					"icon": "Apps"
-				},
-				{
-					"id": 21,
-					"key": "Puestos",
-					"icon": "Work"
-				}
-			]
-		},
-		{
-			"id": 22,
-			"key": "Restaurante",
-			"icon": "Restaurant",
-			"children": [
-				{
-					"id": 23,
-					"key": "Mesas",
-					"icon": "TableChart"
-				},
-				{
-					"id": 24,
-					"key": "Áreas",
-					"icon": "ViewQuilt"
-				},
-				{
-					"id": 25,
-					"key": "Meseros",
-					"icon": "MenuBook"
 				}
 			]
 		}

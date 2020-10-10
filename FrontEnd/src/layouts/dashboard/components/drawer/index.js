@@ -39,7 +39,7 @@ export default function Menu(props) {
 
 	useEffect(() => {
 		setMenu(menuJson.menu);
-	});
+	}, []);
 
 	const _selectParent = (id) => {
 		const finded = menu.find((item) => {
@@ -73,12 +73,12 @@ export default function Menu(props) {
 
 		findedChild.selected = selected;
 
-		let newMenu = menu.map((parent) =>
-			parent.children.map((child) => {
-				if (child.id === idChild) return findedChild;
-				return { ...child, selected: false };
-			})
-		);
+		// let newMenu = menu.map((parent) =>
+		// 	parent.children.map((child) => {
+		// 		if (child.id === idChild) return findedChild;
+		// 		return { ...child, selected: false };
+		// 	})
+		// );
 
 		// setMenu(newMenu);
 	};
@@ -90,7 +90,7 @@ export default function Menu(props) {
 					<div key={parent.key}>
 						<ListItem
 							button
-							// selected={parent.selected === true}
+							selected={parent.selected === true}
 							key={parent.key}
 							className={clsx({
 								[classes.selectedParent]: parent.selected,
@@ -154,7 +154,7 @@ export default function Menu(props) {
 			}}
 		>
 			<Box className={classes.logoContainer}>
-				<img width="65" src={process.env.PUBLIC_URL + "/logo.png"} />
+				<img width="65" src={process.env.PUBLIC_URL + "/logo.png"} alt="logo" />
 				<p className={classes.title}>{TITLE}</p>
 			</Box>
 

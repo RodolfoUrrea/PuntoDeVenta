@@ -57,7 +57,6 @@ export default function Header(props) {
 							className={classes.menuButton}
 							color="inherit"
 							onClick={props.toggleDrawer}
-							className={classes.menuButton}
 						>
 							{props.isDrawerOpen === true ? <ChevronLeftIcon /> : <MenuIcon />}
 						</IconButton>
