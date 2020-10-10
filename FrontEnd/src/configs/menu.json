@@ -1,0 +1,159 @@
+{
+	"menu": [
+		{
+			"id": 1,
+			"key": "Estadísticas",
+			"icon": "Poll",
+			"children": []
+		},
+		{
+			"id": 2,
+			"key": "Encuestas",
+			"icon": "Assignment",
+			"children": [
+				{
+					"id": 3,
+					"key": "Listado",
+					"icon": "MoveToInbox"
+				},
+				{
+					"id": 4,
+					"key": "Crear",
+					"icon": "Queue"
+				},
+				{
+					"id": 5,
+					"key": "Notificaciones",
+					"icon": "NotificationsActive"
+				}
+			]
+		},
+		{
+			"id": 6,
+			"key": "Promociones",
+			"icon": "CreditCard",
+			"children": [
+				{
+					"id": 7,
+					"key": "Listado",
+					"icon": "FormatListBulleted"
+				},
+				{
+					"id": 8,
+					"key": "Crear",
+					"icon": "Queue"
+				},
+				{
+					"id": 9,
+					"key": "Validar",
+					"icon": "AssignmentTurnedIn"
+				}
+			]
+		},
+		{
+			"id": 10,
+			"key": "Empleados",
+			"icon": "CardTravel",
+			"children": [
+				{
+					"id": 11,
+					"key": "Listado",
+					"icon": "FormatListBulleted"
+				},
+				{
+					"id": 12,
+					"key": "Agregar",
+					"icon": "Queue"
+				},
+				{
+					"id": 13,
+					"key": "Programación de Horario",
+					"icon": "AvTimer"
+				}
+			]
+		},
+		{
+			"id": 14,
+			"key": "Clientes",
+			"icon": "Person",
+			"children": [
+				{
+					"id": 15,
+					"key": "Listado",
+					"icon": "FormatListBulleted"
+				},
+				{
+					"id": 16,
+					"key": "Agregar",
+					"icon": "Queue"
+				}
+			]
+		},
+		{
+			"id": 26,
+			"key": "Usuarios",
+			"icon": "PeopleAlt",
+			"children": [
+				{
+					"id": 27,
+					"key": "Listado",
+					"icon": "FormatListBulleted"
+				},
+				{
+					"id": 28,
+					"key": "Agregar",
+					"icon": "Queue"
+				}
+			]
+		},
+		{
+			"id": 17,
+			"key": "Corporativo",
+			"icon": "Business",
+			"children": [
+				{
+					"id": 18,
+					"key": "Empresas",
+					"icon": "AccountBalance"
+				},
+				{
+					"id": 19,
+					"key": "Sucursales",
+					"icon": "ViewCompact"
+				},
+				{
+					"id": 20,
+					"key": "Departamentos",
+					"icon": "Apps"
+				},
+				{
+					"id": 21,
+					"key": "Puestos",
+					"icon": "Work"
+				}
+			]
+		},
+		{
+			"id": 22,
+			"key": "Restaurante",
+			"icon": "Restaurant",
+			"children": [
+				{
+					"id": 23,
+					"key": "Mesas",
+					"icon": "TableChart"
+				},
+				{
+					"id": 24,
+					"key": "Áreas",
+					"icon": "ViewQuilt"
+				},
+				{
+					"id": 25,
+					"key": "Meseros",
+					"icon": "MenuBook"
+				}
+			]
+		}
+	]
+}
