@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import clsx from "clsx";
+import { Link } from "react-router-dom";
 
 import {
 	List,
@@ -18,7 +19,6 @@ import {
 
 import useStyles from "./styles";
 import { TITLE } from "../../../../configs/constants";
-// import renderMenu from "./services/render-menu";
 
 import menuJson from "../../../../configs/menu.json";
 
@@ -88,29 +88,31 @@ export default function Menu(props) {
 			{menu.map((parent, indexParent) => {
 				return (
 					<div key={parent.key}>
-						<ListItem
-							button
-							selected={parent.selected === true}
-							key={parent.key}
-							className={clsx({
-								[classes.selectedParent]: parent.selected,
-							})}
-							onClick={() => {
-								_selectParent(parent.id);
-							}}
-						>
-							<ListItemIcon>
-								<MaterialIcon icon={parent.icon} />
-							</ListItemIcon>
-							<ListItemText primary={parent.key} />
-							{parent.children.length > 0 ? (
-								!parent.selected ? (
-									<ExpandLessIcon />
-								) : (
-									<ExpandMoreIcon />
-								)
-							) : null}
-						</ListItem>
+						<Link className={classes.link} to={parent.path || ""}>
+							<ListItem
+								button
+								selected={parent.selected === true}
+								key={parent.key}
+								className={clsx({
+									[classes.selectedParent]: parent.selected,
+								})}
+								onClick={() => {
+									_selectParent(parent.id);
+								}}
+							>
+								<ListItemIcon>
+									<MaterialIcon icon={parent.icon} />
+								</ListItemIcon>
+								<ListItemText primary={parent.key} />
+								{parent.children.length > 0 ? (
+									!parent.selected ? (
+										<ExpandLessIcon />
+									) : (
+										<ExpandMoreIcon />
+									)
+								) : null}
+							</ListItem>
+						</Link>
 						<Collapse
 							in={parent.selected === true}
 							timeout="auto"
@@ -118,21 +120,23 @@ export default function Menu(props) {
 						>
 							<List component="div" disablePadding>
 								{parent.children.map((child, indexChild) => (
-									<ListItem
-										key={child.key}
-										button
-										className={clsx(classes.nested, {
-											[classes.selectedChild]: child.selected,
-										})}
-										onClick={() => {
-											_selectChild(parent.id, child.id);
-										}}
-									>
-										<ListItemIcon>
-											<MaterialIcon icon={child.icon} />
-										</ListItemIcon>
-										<ListItemText primary={child.key} />
-									</ListItem>
+									<Link className={classes.link} to={child.path || ""}>
+										<ListItem
+											key={child.key}
+											button
+											className={clsx(classes.nested, {
+												[classes.selectedChild]: child.selected,
+											})}
+											onClick={() => {
+												_selectChild(parent.id, child.id);
+											}}
+										>
+											<ListItemIcon>
+												<MaterialIcon icon={child.icon} />
+											</ListItemIcon>
+											<ListItemText primary={child.key} />
+										</ListItem>
+									</Link>
 								))}
 							</List>
 						</Collapse>

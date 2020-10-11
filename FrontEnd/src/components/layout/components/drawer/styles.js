@@ -49,6 +49,10 @@ const useStyles = makeStyles((theme) => ({
 	nested: {
 		paddingLeft: theme.spacing(4),
 	},
+	link: {
+		textDecoration: "none",
+		color: "inherit",
+	},
 	// selectedParent: {
 	// 	background: "#25292d",
 	// },

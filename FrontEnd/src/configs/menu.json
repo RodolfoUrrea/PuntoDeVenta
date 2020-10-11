@@ -14,17 +14,20 @@
 				{
 					"id": 3,
 					"key": "Listado",
-					"icon": "MoveToInbox"
+					"icon": "MoveToInbox",
+					"path": "/encuestas/listado"
 				},
 				{
 					"id": 4,
 					"key": "Crear",
-					"icon": "Queue"
+					"icon": "Queue",
+					"path": "/encuestas/agregar"
 				},
 				{
 					"id": 5,
 					"key": "Notificaciones",
-					"icon": "NotificationsActive"
+					"icon": "NotificationsActive",
+					"path": "/encuestas/notificaciones"
 				}
 			]
 		},

@@ -5,10 +5,9 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 
 import Header from "./components/header";
 import Drawer from "./components/drawer";
-
 import useStyles from "./styles";
 
-export default function Dashboard(props) {
+export default function Layout(props) {
 	const classes = useStyles();
 
 	const [isDrawerOpen, setDrawerOpen] = React.useState(true);
