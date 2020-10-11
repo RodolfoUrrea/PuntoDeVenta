@@ -149,12 +149,14 @@
 				{
 					"id": 27,
 					"key": "Listado",
-					"icon": "FormatListBulleted"
+					"icon": "FormatListBulleted",
+					"path": "/usuarios/listado"
 				},
 				{
 					"id": 28,
 					"key": "Agregar",
-					"icon": "Queue"
+					"icon": "Queue",
+					"path": "/usuarios/agregar"
 				}
 			]
 		}

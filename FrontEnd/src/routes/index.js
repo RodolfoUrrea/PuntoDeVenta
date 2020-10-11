@@ -7,6 +7,8 @@ import {
 	NotificacionesEncuestas,
 } from "../screens/encuestas";
 
+import { FormUsuarios, GridUsuarios } from "../screens/usuarios";
+
 export default function routes() {
 	return (
 		<Switch>
@@ -21,6 +23,13 @@ export default function routes() {
 			</Route>
 			<Route path="/encuestas/notificaciones">
 				<NotificacionesEncuestas />
+			</Route>
+
+			<Route path="/usuarios/listado">
+				<GridUsuarios />
+			</Route>
+			<Route path="/usuarios/agregar">
+				<FormUsuarios />
 			</Route>
 		</Switch>
 	);
